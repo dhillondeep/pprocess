@@ -58,4 +58,15 @@ void showPreviewHelp() {
     std::cout << "-f, --file            Preview a single file." << std::endl;
 }
 
+/**
+ * Show help text when an invalid command is typed
+ */
+void showPreviewHelp(const char* name) {
+    std::cout << "Could not find a command named " << name << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Run 'pprocess -h' (or 'pprocess <command> -h') for available pprocess commands and options.";
+    std::cout << std::endl;
+}
+
 #endif //PPROCESS_PRINTER_H
