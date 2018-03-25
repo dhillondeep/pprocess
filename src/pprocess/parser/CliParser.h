@@ -50,7 +50,7 @@ const char *getCommandName();
  *
  * @return flag value
  */
-std::map<std::string, std::string> getFlags();
+std::map<std::string, std::string> &getFlags();
 
 /**
  * If there is anything illegal about the argument, this is true

@@ -102,7 +102,7 @@ const char *getCommandName() {
     return cliData.command;
 }
 
-std::map<std::string, std::string> getFlags() {
+std::map<std::string, std::string> &getFlags() {
     return cliData.flagValues;
 }
 

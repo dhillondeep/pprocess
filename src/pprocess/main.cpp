@@ -1,3 +1,5 @@
+#include "pprocess/commands/generate.h"
+#include "pprocess/commands/preview.h"
 #include "pprocess/parser/HelpPrinter.h"
 #include "pprocess/parser/CliParser.h"
 
@@ -27,8 +29,8 @@ int main(int argc, const char **argv) {
 
     // execute the command
     if (strcmp("generate", getCommandName()) == 0) {
-        std::cout << "Execute generate command" << std::endl;
+        executeGenerate(getFlags(), enableVerbose());
     } else if (strcmp("preview", getCommandName()) == 0) {
-        std::cout << "Execute preview command" << std::endl;
+        executePreview(getFlags(), enableVerbose());
     }
 }
