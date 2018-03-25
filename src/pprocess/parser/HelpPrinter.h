@@ -5,7 +5,6 @@
  * @date March 24, 2018
  */
 
-
 #ifndef PPROCESS_PRINTER_H
 #define PPROCESS_PRINTER_H
 
@@ -62,7 +61,7 @@ void showPreviewHelp() {
  * Show help text when an invalid command is typed
  */
 void showPreviewHelp(const char* name) {
-    std::cout << "Could not find a command named " << name << std::endl;
+    std::cout << "Could not find a command named " << name <<" or it's value/flag is invalid." << std::endl;
     std::cout << std::endl;
 
     std::cout << "Run 'pprocess -h' (or 'pprocess <command> -h') for available pprocess commands and options.";
